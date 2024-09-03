@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConcreteDecoratorB/1.0.0": {
+        "dependencies": {
+          "Decorator": "1.0.0"
+        },
+        "runtime": {
+          "ConcreteDecoratorB.dll": {}
+        }
+      },
+      "Component/1.0.0": {
+        "runtime": {
+          "Component.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ConcreteComponent/1.0.0": {
+        "dependencies": {
+          "Component": "1.0.0"
+        },
+        "runtime": {
+          "ConcreteComponent.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Decorator/1.0.0": {
+        "dependencies": {
+          "Component": "1.0.0",
+          "ConcreteComponent": "1.0.0"
+        },
+        "runtime": {
+          "Decorator.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConcreteDecoratorB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Component/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConcreteComponent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Decorator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

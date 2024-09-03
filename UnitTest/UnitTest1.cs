@@ -1,3 +1,17 @@
+/******************************************************************************
+* Filename    = UnitTest1.cs
+*
+* Author      = T Lakshmi Sagar
+*
+* Product     = SoftwareDesignPatterns
+* 
+* Project     = DecoratorDemo
+*
+* Description = Unit tests for the coffee decorator pattern implementation.
+*               Validates that the decorators correctly modify the description
+*               and cost of coffee objects.
+*****************************************************************************/
+
 using Component;
 using ConcreteComponent;
 using ConcreteDecoratorA;
@@ -8,6 +22,9 @@ namespace UnitTest
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Test that SimpleCoffee has the correct description and cost.
+        /// </summary>
         [TestMethod]
         public void SimpleCoffee_ShouldHaveCorrectDescriptionAndCost()
         {
@@ -23,6 +40,9 @@ namespace UnitTest
             Assert.AreEqual(5.0, cost);
         }
 
+        /// <summary>
+        /// Test that MilkDecorator adds milk and increases the cost.
+        /// </summary>
         [TestMethod]
         public void MilkDecorator_ShouldAddMilkAndIncreaseCost()
         {
@@ -39,6 +59,9 @@ namespace UnitTest
             Assert.AreEqual(8.0, cost);
         }
 
+        /// <summary>
+        /// Test that SugarDecorator adds sugar and increases the cost.
+        /// </summary>
         [TestMethod]
         public void SugarDecorator_ShouldAddSugarAndIncreaseCost()
         {
@@ -55,6 +78,10 @@ namespace UnitTest
             Assert.AreEqual(7.0, cost);
         }
 
+        /// <summary>
+        /// Test that multiple decorators (Milk and Sugar) correctly modify the
+        /// description and cost of the coffee.
+        /// </summary>
         [TestMethod]
         public void MultipleDecorators_ShouldAddMultipleFeaturesAndIncreaseCost()
         {
