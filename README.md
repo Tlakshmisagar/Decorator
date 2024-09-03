@@ -75,7 +75,7 @@ This example demonstrates the Decorator Design Pattern through a coffee ordering
    - Wrap the coffee instance (now with milk) with `SugarDecorator`.
    - **Output:** Shows the description "Simple Coffee, Milk, Sugar" and the updated cost (10).
 
-## UML Diagram of implementation
+## UML Diagram
 
 ![alt text](image.png)
 
